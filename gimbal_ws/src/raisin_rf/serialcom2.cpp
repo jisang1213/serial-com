@@ -53,7 +53,7 @@ void readSerial(int serialPort, char *buffer, int bufferSize) {
 }
 
 int main() {
-    const char *serialPortName = "/dev/ttyACM0";  // Change this to your actual serial port
+    const char *serialPortName = "/dev/cu.usbmodem367C344F31321";  // Change this to your actual serial port
     int baudRate = B9600;  // Change this to your desired baud rate
 
     int serialPort = configureSerialPort(serialPortName, baudRate);
@@ -62,15 +62,22 @@ int main() {
     }
 
     const char *dataToSend = "0123456789ABCDEFGHIJKLMN"; // 24-byte string
-    writeSerial(serialPort, dataToSend, strlen(dataToSend));
 
-    sleep(1);
+    while(1){
+        writeSerial(serialPort, dataToSend, strlen(dataToSend));
 
-    std::cout << "sent data" << std::endl;
+        usleep(1);
 
-    readSerial(serialPort, (char*) receivedata.c, sizeof(receivedata.c));
+        std::cout << "sent data" << std::endl;
 
-    std::cout << receivedata.d[1] << std::endl;
+        readSerial(serialPort, (char*)receivedata.c, sizeof(receivedata.c));
+
+        std::cout << receivedata.d[0] << std::endl;
+        std::cout << receivedata.d[1] << std::endl;
+        std::cout << receivedata.d[2] << std::endl;
+
+        sleep(1);
+    }
 
     close(serialPort);
 

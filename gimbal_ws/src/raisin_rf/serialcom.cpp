@@ -1,14 +1,7 @@
 #include <iostream>
-#include <stdint.h>
 #include <fcntl.h>
 #include <termios.h>
 #include <unistd.h>
-#include <stdint.h>
-
-typedef union{
-    double d[3];
-    uint8_t c[24];
-} data;
 
 int main() {
     const char *portName = "/dev/ttyACM0";  // Replace with your actual serial port
@@ -48,16 +41,14 @@ int main() {
     }
 
     // Send data
-    data senddata = {.d = {3.14, 1.23, 2.54}};
-    write(serialPort, senddata.c, sizeof(senddata));
-
-    sleep(1);
+    float senddata[3] = {3.14f, 1.23f, 2.54f};
+    write(serialPort, senddata, 3*sizeof(float));
 
     // Read data
-    data receivedata;
-    int bytesRead = read(serialPort, receivedata.c, sizeof(receivedata));
+    float receivedata[3];
+    int bytesRead = read(serialPort, receivedata, sizeof(receivedata));
     if (bytesRead > 0) {
-        std::cout << "Received: " << receivedata.c[0] << std::endl;
+        std::cout << "Received: " << receivedata[0] << std::endl;
     } else {
         perror("Error reading from serial port");
     }
