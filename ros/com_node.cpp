@@ -53,7 +53,7 @@ void writeSerial(int serialPort, const char *data, int dataSize) {
 void readSerial(int serialPort, char *buffer, int bufferSize) {
     int bytesRead = read(serialPort, buffer, bufferSize);
     if (bytesRead > 0) {
-        buffer[bytesRead] = '\0'; // Null-terminate the received data
+        //buffer[bytesRead] = '\0'; // Null-terminate the received data
         std::cout << "Received data: " << buffer << std::endl;
     }
 }
@@ -64,7 +64,7 @@ public:
     SerialNode(int serialPort) : Node("serial_node"), serialPort(serialPort) {
         // Subscribe to the input topic
         sub_ = create_subscription<geometry_msgs::msg::Vector3>(
-            "/input_topic", 10, std::bind(&SerialNode::inputCallback, this, std::placeholders::_1));
+            "/command_topic", 10, std::bind(&SerialNode::inputCallback, this, std::placeholders::_1));
 
         // Advertise the output topic
         pub_ = create_publisher<geometry_msgs::msg::Vector3>("/output_topic", 10);
@@ -74,7 +74,7 @@ private:
     //this function gets called whenever the node receives data from subcribed topic.
     void inputCallback(const geometry_msgs::msg::Vector3::SharedPtr input_msg) {
         //process command data
-        senddata.d[0] = input_msg->x;
+        senddata.d[0] = input_msg->x;   //*check type
         senddata.d[1] = input_msg->y;
         senddata.d[2] = input_msg->z;
 

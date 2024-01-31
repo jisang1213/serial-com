@@ -12,6 +12,8 @@ typedef union{
 data senddata;
 data receivedata;
 
+int count = 1;
+
 // Function to configure the serial port
 int configureSerialPort(const char *port, int baudRate) {
     int serialPort = open(port, O_RDWR | O_NOCTTY | O_NDELAY);
@@ -47,7 +49,7 @@ void writeSerial(int serialPort, const char *data, int dataSize) {
 void readSerial(int serialPort, char *buffer, int bufferSize) {
     int bytesRead = read(serialPort, buffer, bufferSize);
     if (bytesRead > 0) {
-        buffer[bytesRead] = '\0'; // Null-terminate the received data
+        //buffer[bytesRead] = '\0'; // Null-terminate the received data
         std::cout << "Received data: " << buffer << std::endl;
     }
 }
@@ -61,22 +63,26 @@ int main() {
         return 1;
     }
 
-    const char *dataToSend = "0123456789ABCDEFGHIJKLMN"; // 24-byte string
-
     while(1){
-        writeSerial(serialPort, dataToSend, strlen(dataToSend));
+        std::cout << count;
 
-        usleep(1);
+        //command
+        senddata.d[0] = 0.0;   //*check type
+        senddata.d[1] = 0.0;
+        senddata.d[2] = 0.0;
 
-        std::cout << "sent data" << std::endl;
+        //write command to MCU
+        writeSerial(serialPort, (char*)senddata.c, sizeof(senddata.c));
+        usleep(200);
+        std::cout << ":  Sent data" << std::endl;
 
         readSerial(serialPort, (char*)receivedata.c, sizeof(receivedata.c));
-
         std::cout << receivedata.d[0] << std::endl;
         std::cout << receivedata.d[1] << std::endl;
         std::cout << receivedata.d[2] << std::endl;
 
-        sleep(1);
+        usleep(500000);
+        count++;
     }
 
     close(serialPort);
