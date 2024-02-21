@@ -1,0 +1,4 @@
+source;share/gimbalcom_package/local_setup.bash
+source;share/gimbalcom_package/local_setup.dsv
+source;share/gimbalcom_package/local_setup.sh
+source;share/gimbalcom_package/local_setup.zsh

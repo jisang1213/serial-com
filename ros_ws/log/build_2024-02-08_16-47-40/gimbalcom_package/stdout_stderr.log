@@ -1,0 +1,11 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/gimbalcom.dir/src/com_node.cpp.o[0m
+[01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:[m[K In member function ‘[01m[Kvoid SerialNode::inputCallback(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:71:20:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K-fpermissive[m[K]
+   71 |             return [01;31m[K1[m[K;
+      |                    [01;31m[K^[m[K
+[01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:77:20:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K-fpermissive[m[K]
+   77 |             return [01;31m[K1[m[K;
+      |                    [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/gimbalcom.dir/build.make:76: CMakeFiles/gimbalcom.dir/src/com_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gimbalcom.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

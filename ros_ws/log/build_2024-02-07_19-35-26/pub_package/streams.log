@@ -1,0 +1,25 @@
+[0.018s] Invoking command in '/home/jakob/Desktop/serial-com/ros_ws/build/pub_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/jakob/.local/bin/cmake --build /home/jakob/Desktop/serial-com/ros_ws/build/pub_package -- -j12 -l12
+[0.061s] [ 50%] [32mBuilding CXX object CMakeFiles/commander.dir/src/publisher.cpp.o[0m
+[1.859s] [100%] [32m[1mLinking CXX executable commander[0m
+[1.945s] [100%] Built target commander
+[1.953s] Invoked command in '/home/jakob/Desktop/serial-com/ros_ws/build/pub_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/jakob/.local/bin/cmake --build /home/jakob/Desktop/serial-com/ros_ws/build/pub_package -- -j12 -l12
+[1.996s] Invoking command in '/home/jakob/Desktop/serial-com/ros_ws/build/pub_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/jakob/.local/bin/cmake --install /home/jakob/Desktop/serial-com/ros_ws/build/pub_package
+[2.018s] -- Install configuration: ""
+[2.019s] -- Installing: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/lib/pub_package/commander
+[2.020s] -- Set runtime path of "/home/jakob/Desktop/serial-com/ros_ws/install/pub_package/lib/pub_package/commander" to ""
+[2.020s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/ament_index/resource_index/package_run_dependencies/pub_package
+[2.020s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/ament_index/resource_index/parent_prefix_path/pub_package
+[2.020s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/environment/ament_prefix_path.sh
+[2.020s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/environment/ament_prefix_path.dsv
+[2.020s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/environment/path.sh
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/environment/path.dsv
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/local_setup.bash
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/local_setup.sh
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/local_setup.zsh
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/local_setup.dsv
+[2.021s] -- Installing: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/package.dsv
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/ament_index/resource_index/packages/pub_package
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/cmake/pub_packageConfig.cmake
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/cmake/pub_packageConfig-version.cmake
+[2.021s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/pub_package/share/pub_package/package.xml
+[2.029s] Invoked command in '/home/jakob/Desktop/serial-com/ros_ws/build/pub_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /home/jakob/.local/bin/cmake --install /home/jakob/Desktop/serial-com/ros_ws/build/pub_package

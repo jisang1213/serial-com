@@ -1,0 +1,16 @@
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/lib/gimbalcom_package/gimbalcom
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/ament_index/resource_index/package_run_dependencies/gimbalcom_package
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/ament_index/resource_index/parent_prefix_path/gimbalcom_package
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/environment/ament_prefix_path.sh
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/environment/ament_prefix_path.dsv
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/environment/path.sh
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/environment/path.dsv
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/local_setup.bash
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/local_setup.sh
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/local_setup.zsh
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/local_setup.dsv
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/package.dsv
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/ament_index/resource_index/packages/gimbalcom_package
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/cmake/gimbalcom_packageConfig.cmake
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/cmake/gimbalcom_packageConfig-version.cmake
+/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/package.xml

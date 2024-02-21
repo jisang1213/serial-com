@@ -1,0 +1,26 @@
+[0.029s] Invoking command in '/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/jakob/.local/bin/cmake --build /home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package -- -j12 -l12
+[0.094s] [ 50%] [32mBuilding CXX object CMakeFiles/gimbalcom.dir/src/com_node.cpp.o[0m
+[0.864s] [01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:[m[K In function ‘[01m[Kint configureSerialPort(const char*, int)[m[K’:
+[0.864s] [01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:14:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kport[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.864s]    14 | int configureSerialPort([01;35m[Kconst char *port[m[K, int baudRate) {
+[0.864s]       |                         [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[0.864s] [01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:14:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbaudRate[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.864s]    14 | int configureSerialPort(const char *port, [01;35m[Kint baudRate[m[K) {
+[0.864s]       |                                           [01;35m[K~~~~^~~~~~~~[m[K
+[0.882s] [01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:[m[K In member function ‘[01m[Kvoid SerialNode::inputCallback(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.882s] [01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:71:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_fd[m[K’ was not declared in this scope
+[0.882s]    71 |         if (write([01;31m[Kserial_fd[m[K, &dataToSend, sizeof(dataToSend)) < 0) {
+[0.882s]       |                   [01;31m[K^~~~~~~~~[m[K
+[0.882s] [01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:73:20:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K-fpermissive[m[K]
+[0.882s]    73 |             return [01;31m[K1[m[K;
+[0.882s]       |                    [01;31m[K^[m[K
+[0.883s] [01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:77:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kserial_fd[m[K’ was not declared in this scope
+[0.883s]    77 |         if (read([01;31m[Kserial_fd[m[K, &receivedData, sizeof(receivedData)) < 0) {
+[0.883s]       |                  [01;31m[K^~~~~~~~~[m[K
+[0.883s] [01m[K/home/jakob/Desktop/serial-com/ros_ws/src/gimbalcom_package/src/com_node.cpp:79:20:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K-fpermissive[m[K]
+[0.883s]    79 |             return [01;31m[K1[m[K;
+[0.883s]       |                    [01;31m[K^[m[K
+[1.837s] make[2]: *** [CMakeFiles/gimbalcom.dir/build.make:76: CMakeFiles/gimbalcom.dir/src/com_node.cpp.o] Error 1
+[1.838s] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gimbalcom.dir/all] Error 2
+[1.838s] make: *** [Makefile:146: all] Error 2
+[1.843s] Invoked command in '/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/jakob/.local/bin/cmake --build /home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package -- -j12 -l12

@@ -1,0 +1,8 @@
+source;share/gimbalcom_package/hook/cmake_prefix_path.ps1
+source;share/gimbalcom_package/hook/cmake_prefix_path.dsv
+source;share/gimbalcom_package/hook/cmake_prefix_path.sh
+source;share/gimbalcom_package/local_setup.bash
+source;share/gimbalcom_package/local_setup.dsv
+source;share/gimbalcom_package/local_setup.ps1
+source;share/gimbalcom_package/local_setup.sh
+source;share/gimbalcom_package/local_setup.zsh

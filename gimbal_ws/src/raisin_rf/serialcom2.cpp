@@ -3,6 +3,10 @@
 #include <termios.h>
 #include <unistd.h>
 #include <cstring>
+#include <cmath>
+
+#include <chrono>
+
 
 typedef union{
     double d[3];
@@ -46,16 +50,21 @@ void writeSerial(int serialPort, const char *data, int dataSize) {
 }
 
 // Function to read data from the serial port
-void readSerial(int serialPort, char *buffer, int bufferSize) {
+int readSerial(int serialPort, char *buffer, int bufferSize) {
     int bytesRead = read(serialPort, buffer, bufferSize);
     if (bytesRead > 0) {
         //buffer[bytesRead] = '\0'; // Null-terminate the received data
-        std::cout << "Received data: " << buffer << std::endl;
+        std::cout << "Received data: " << std::endl;
+        return 0;
+    }
+    else{
+        std::cout << "Not received. " << std::endl;
+        return -1;
     }
 }
 
 int main() {
-    const char *serialPortName = "/dev/cu.usbmodem367C344F31321";  // Change this to your actual serial port
+    const char *serialPortName = "/dev/ttyACM0";  // Change this to your actual serial port
     int baudRate = B9600;  // Change this to your desired baud rate
 
     int serialPort = configureSerialPort(serialPortName, baudRate);
@@ -64,24 +73,27 @@ int main() {
     }
 
     while(1){
-        std::cout << count;
-
         //command
-        senddata.d[0] = 0.0;   //*check type
-        senddata.d[1] = 0.0;
-        senddata.d[2] = 0.0;
+        senddata.d[0] = 0.1;   //*check type
+        senddata.d[1] = 0.2;
+        senddata.d[2] = 0.3;
 
         //write command to MCU
         writeSerial(serialPort, (char*)senddata.c, sizeof(senddata.c));
-        usleep(200);
-        std::cout << ":  Sent data" << std::endl;
+        std::cout << count << ":  Sent data" << std::endl;
+        std::cout << senddata.d[0] << std::endl;
+        std::cout << senddata.d[1] << std::endl;
+        std::cout << senddata.d[2] << std::endl;
+        usleep(10);
+        
 
-        readSerial(serialPort, (char*)receivedata.c, sizeof(receivedata.c));
-        std::cout << receivedata.d[0] << std::endl;
-        std::cout << receivedata.d[1] << std::endl;
-        std::cout << receivedata.d[2] << std::endl;
+        if(readSerial(serialPort, (char*)receivedata.c, sizeof(receivedata.c)) == 0){
+            std::cout << receivedata.d[0] << std::endl;
+            std::cout << receivedata.d[1] << std::endl;
+            std::cout << receivedata.d[2] << std::endl;
+        }
 
-        usleep(500000);
+        usleep(10000);
         count++;
     }
 

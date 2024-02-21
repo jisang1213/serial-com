@@ -1,0 +1,10 @@
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/uninstall.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/gimbalcom_package_uninstall.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/gimbalcom.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/test.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/edit_cache.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/rebuild_cache.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/list_install_components.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/install.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/install/local.dir
+/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package/CMakeFiles/install/strip.dir

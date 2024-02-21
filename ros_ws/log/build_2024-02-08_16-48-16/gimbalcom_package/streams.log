@@ -1,0 +1,25 @@
+[0.026s] Invoking command in '/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/jakob/.local/bin/cmake --build /home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package -- -j12 -l12
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/gimbalcom.dir/src/com_node.cpp.o[0m
+[3.060s] [100%] [32m[1mLinking CXX executable gimbalcom[0m
+[3.205s] [100%] Built target gimbalcom
+[3.213s] Invoked command in '/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/jakob/.local/bin/cmake --build /home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package -- -j12 -l12
+[3.253s] Invoking command in '/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/jakob/.local/bin/cmake --install /home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package
+[3.278s] -- Install configuration: ""
+[3.279s] -- Installing: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/lib/gimbalcom_package/gimbalcom
+[3.281s] -- Set runtime path of "/home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/lib/gimbalcom_package/gimbalcom" to ""
+[3.281s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/ament_index/resource_index/package_run_dependencies/gimbalcom_package
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/ament_index/resource_index/parent_prefix_path/gimbalcom_package
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/environment/ament_prefix_path.sh
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/environment/ament_prefix_path.dsv
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/environment/path.sh
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/environment/path.dsv
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/local_setup.bash
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/local_setup.sh
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/local_setup.zsh
+[3.282s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/local_setup.dsv
+[3.282s] -- Installing: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/package.dsv
+[3.283s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/ament_index/resource_index/packages/gimbalcom_package
+[3.283s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/cmake/gimbalcom_packageConfig.cmake
+[3.283s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/cmake/gimbalcom_packageConfig-version.cmake
+[3.283s] -- Up-to-date: /home/jakob/Desktop/serial-com/ros_ws/install/gimbalcom_package/share/gimbalcom_package/package.xml
+[3.294s] Invoked command in '/home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/jakob/.local/bin/cmake --install /home/jakob/Desktop/serial-com/ros_ws/build/gimbalcom_package
